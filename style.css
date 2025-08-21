@@ -1,0 +1,282 @@
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: underline;
+    
+
+
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* Animated gradient background with more colors */
+    background: linear-gradient(120deg, #00c7c7, #0051ff, #00ff40, #006611);
+    background-size: 800% 800%;
+    animation: gradientMove 20s ease infinite;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Keyframes for moving gradient */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: rgb(255, 208, 0);
+}
+section {
+    padding: 40px;
+    text-align: center;
+}
+.animation-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0; /* Remove space between GIFs */
+    margin: 20px auto;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.animation-box img {
+    border-radius: 0; /* Remove individual rounding */
+    max-width: 300px; /* Doubled from 150px to 300px */
+    margin: 0;
+    box-shadow: none;
+    display: block;
+}
+
+.animation-box img:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.animation-box img:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px yellow;
+}
+.anime-image {
+    margin-top: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+.anime-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer {
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+    margin-top: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Service cards animation */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.services .card {
+    animation: fadeUp 0.8s cubic-bezier(.42,.58,.58,1.12) both;
+    /* Stagger animation for each card */
+}
+
+.services .card:nth-child(1) { animation-delay: 0.1s; }
+.services .card:nth-child(2) { animation-delay: 0.2s; }
+.services .card:nth-child(3) { animation-delay: 0.3s; }
+.services .card:nth-child(4) { animation-delay: 0.4s; }
+.services .card:nth-child(5) { animation-delay: 0.5s; }
+.services .card:nth-child(6) { animation-delay: 0.6s; }
+.services .card:nth-child(7) { animation-delay: 0.7s; }
+.services .card:nth-child(8) { animation-delay: 0.8s; }
+.services .card:nth-child(9) { animation-delay: 0.9s; }
+
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.portfolio-card {
+    background: rgba(0,0,0,0.3);
+    border-radius: 12px;
+    padding: 18px;
+    width: 250px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+.portfolio-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.portfolio-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 6px 24px #ff0099;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.testimonial-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 18px 24px;
+    width: 300px;
+    color: #fff;
+    font-style: italic;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+.testimonial-card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.social-links {
+    margin: 16px 0;
+}
+.social-links a {
+    margin: 0 8px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.start-animation-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    background: rgba(0,0,0,0.4);
+    padding: 30px 40px;
+    border-radius: 16px;
+    width: fit-content;
+    box-shadow: 0 4px 24px #00c6ff;
+    animation: fadeUp 1s cubic-bezier(.42,.58,.58,1.12);
+}
+
+.start-now {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.45);
+    padding: 32px 48px;
+    margin: 40px auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #00c6ff;
+    font-size: 1.5em;
+    color: #ffd700;
+    max-width: 400px;
+    animation: fadeUp 1s cubic-bezier(.42,.58,.58,1.12);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.start-now .cta-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 32px;
+    background: linear-gradient(90deg, #ff6a00, #ff0099);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    box-shadow: 0 0 16px #ffd700, 0 0 32px #00c6ff;
+    animation: pulse 1.5s infinite;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.start-now .cta-btn:hover {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    transform: scale(1.08);
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 16px #ffd700, 0 0 32px #00c6ff; }
+    50% { box-shadow: 0 0 32px #ffd700, 0 0 64px #00c6ff; }
+    100% { box-shadow: 0 0 16px #ffd700, 0 0 32px #00c6ff; }
+}
