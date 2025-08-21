@@ -47,7 +47,7 @@ header {
 }
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: center ;
     gap: 20px;
     background-color: rgba(0,0,0,0.4);
     padding: 10px;
@@ -64,18 +64,6 @@ section {
     padding: 40px;
     text-align: center;
 }
-.animation-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0; /* Remove space between GIFs */
-    margin: 20px auto;
-    background: rgba(0,0,0,0.4);
-    padding: 20px;
-    border-radius: 10px;
-    width: fit-content;
-}
-
 
 .services {
     display: flex;
@@ -263,4 +251,5 @@ html {
     50% { box-shadow: 0 0 32px #ffd700, 0 0 64px #00c6ff; }
     100% { box-shadow: 0 0 16px #ffd700, 0 0 32px #00c6ff; }
 }
+
 
