@@ -76,23 +76,6 @@ section {
     width: fit-content;
 }
 
-.animation-box img {
-    border-radius: 0; /* Remove individual rounding */
-    max-width: 300px; /* Doubled from 150px to 300px */
-    margin: 0;
-    box-shadow: none;
-    display: block;
-}
-
-.animation-box img:first-child {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-
-.animation-box img:last-child {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
 
 .services {
     display: flex;
@@ -280,3 +263,4 @@ html {
     50% { box-shadow: 0 0 32px #ffd700, 0 0 64px #00c6ff; }
     100% { box-shadow: 0 0 16px #ffd700, 0 0 32px #00c6ff; }
 }
+
